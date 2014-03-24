@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<bulletImpactSound>BulletImpactMetal</bulletImpactSound>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<constructionEffect>ConstructMetal</constructionEffect>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+
+
+	<!-- ========================= Power-related ===============================-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>LiBattery</defName>
+		<eType>Building_Battery</eType>
+		<label>Lithium-Ion Battery</label>
+		<thingClass> Building_Battery</thingClass>
+		<texturePath>Things/Building/Battery</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<tickerType>Normal</tickerType>
+		<maxHealth>200</maxHealth>
+		<flammability>2.2</flammability>
+		<description>Stores electricity when there is excess power and yields it when there is not. More efficient and larger capacity. Slightly more flammable than normal batteries.</description>
+		<size>(1,2)</size>
+		<workToBuild>200</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>75</count>
+			</li>
+		</costList>
+		<overdraw>false</overdraw>
+		<comps>
+			<li>
+				<compClass>CompPowerBattery</compClass>
+				<storedEnergyMax>1500</storedEnergyMax>
+				<efficiency>0.75</efficiency>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+		</comps>
+		<killedLeavings>
+			<li>
+				<thingDef>DebrisSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<researchPrerequisite>LiIonBatteryTech</researchPrerequisite>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<designationCategory>Building</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<transmitsPower>true</transmitsPower>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SuperIronBattery</defName>
+		<eType>Building_Battery</eType>
+		<label>Super-Iron Battery</label>
+		<thingClass> Building_Battery</thingClass>
+		<texturePath>Things/Building/Battery</texturePath>
+		<altitudeLayer>BuildingTall</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<tickerType>Normal</tickerType>
+		<maxHealth>200</maxHealth>
+		<flammability>2.2</flammability>
+		<description>Stores electricity when there is excess power and yields it when there is not. Highly efficient and large capacity. Slightly more flammable.</description>
+		<size>(1,2)</size>
+		<workToBuild>200</workToBuild>
+		<costList>
+			<li>
+				<thingDef>Metal</thingDef>
+				<count>120</count>
+			</li>
+		</costList>
+		<overdraw>false</overdraw>
+		<comps>
+			<li>
+				<compClass>CompPowerBattery</compClass>
+				<storedEnergyMax>3000</storedEnergyMax>
+				<efficiency>0.95</efficiency>
+				<startElectricalFires>true</startElectricalFires>
+			</li>
+		</comps>
+		<killedLeavings>
+			<li>
+				<thingDef>DebrisSlag</thingDef>
+				<count>1</count>
+			</li>
+		</killedLeavings>
+		<filthLeavings>
+			<li>
+				<thingDef>SlagRubble</thingDef>
+				<count>2</count>
+			</li>
+		</filthLeavings>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<surfaceNeeded>Light</surfaceNeeded>
+		<researchPrerequisite>SuperIronBatteryTech</researchPrerequisite>
+		<designationCategory>Building</designationCategory>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<transmitsPower>true</transmitsPower>
+	</ThingDef>
+
+</Buildings>
+
+

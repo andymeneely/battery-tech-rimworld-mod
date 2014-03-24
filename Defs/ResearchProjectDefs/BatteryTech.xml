@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+			<defName>LiIonBatteryTech</defName>
+			<label>Lithium-Ion Batteries</label>
+			<descriptionBefore>Build batteries that store more and are more efficient.</descriptionBefore>
+			<totalCost>10000</totalCost>
+			<prerequisites></prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+			<defName>SuperIronBatteryTech</defName>
+			<label>Super-Iron Batteries</label>
+			<descriptionBefore>The ultimate battery technology.</descriptionBefore>
+			<totalCost>10000</totalCost>
+			<prerequisites>
+				<li>LiIonBatteryTech</li>
+			</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>
