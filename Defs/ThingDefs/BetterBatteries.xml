@@ -81,7 +81,7 @@
 		<flammability>2.2</flammability>
 		<description>Stores electricity when there is excess power and yields it when there is not. Highly efficient and large capacity. Slightly more flammable.</description>
 		<size>(1,2)</size>
-		<workToBuild>200</workToBuild>
+		<workToBuild>400</workToBuild>
 		<costList>
 			<li>
 				<thingDef>Metal</thingDef>
