@@ -13,7 +13,7 @@
 			<defName>SuperIronBatteryTech</defName>
 			<label>Super-Iron Batteries</label>
 			<descriptionBefore>The ultimate battery technology.</descriptionBefore>
-			<totalCost>10000</totalCost>
+			<totalCost>15000</totalCost>
 			<prerequisites>
 				<li>LiIonBatteryTech</li>
 			</prerequisites>
